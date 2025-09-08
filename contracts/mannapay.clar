@@ -1,5 +1,3 @@
-;; MannaPay Subscription Management Contract
-;; This contract manages subscription payments and tracking
 
 (define-constant CONTRACT-OWNER tx-sender)
 (define-constant USDC-CONTRACT (as-contract (unwrap-panic (contract-call? .usdc-token get-contract-address))))
