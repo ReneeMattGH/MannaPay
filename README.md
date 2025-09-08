@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+#  MannaPay    💳 → 🔗 → 🎬  #
+   
+### MannaPay makes subscriptions simple — pay only for what you use, stop anytime. ###
+A Bitcoin-powered subscription hub built on Layer-2, designed to give users full control over their streaming and digital subscriptions.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+---
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Features ###
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Wallet Connect (demo) — start with one click, no complex onboarding.
+- Choose Streaming Services — connect to platforms like Netflix, Prime, Spotify.
+- Flexible Payments — pay monthly or stop anytime, no lock-ins.
+- Instant Refund Simulation — shows how unused time converts back instantly.
+- No more loosing money on forgetting to cancel.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Blockchain Layer ##
 
-### `npm run build`
+- Stacks Layer-2 (Bitcoin-secured) → all subscription logic runs on Stacks chain, anchored to Bitcoin for security.
+- Clarity Smart Contracts →
+     - Lock subscription funds.
+     - Stream monthly payments.
+     - Enable instant refunds when user cancels.
+     - Transparent, auditable by anyone.
+- Stacks API (Hiro API / Stacks Blockchain API) → fetch live transaction states, balances, and contract events.
+- Leather Wallet SDK → secure wallet connection and contract calls.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Frontend (User-Facing dApp) ##
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React + TypeScript → scalable and hackathon-friendly frontend.
+- Tailwind CSS + shadcn/ui + Framer Motion → sleek, slim, and aesthetic UI.
+- Stacks.js SDK → direct interaction between frontend and Clarity contracts.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Backend (Lightweight Support Layer) ##
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Node.js + Express → handles app logic outside blockchain, like storing subscription preferences.
+Simple Database → keeps track of:
+   - Which user subscribed to which service.
+   - Plan details (Basic / Premium).
+   - Timestamps for start/stop.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+MannaPay keeps the critical money logic on-chain with Clarity contracts, but use a lightweight backend only to store simple subscription data and send real-time updates to the user dashboard.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+# Getting the rep #
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Clone the Repo: ### 
+```bash
+git clone https://github.com/" "/mannapay.git
+cd mannapay
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Installing the Dependencies: ###
+```bash
+npm install
+```
+
+### 3. Starting the repo: ###
+```bash
+npm run 
+npm start
+```
+
+⚡ MannaPay — making subscriptions smarter with Bitcoin.
